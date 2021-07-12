@@ -5,12 +5,14 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   background-color: #ffffff;
   width: 870px;
-  height: 679px;
+  margin-top: 21px;
+  border-radius: 5px;
 }
 .top-players {
   padding: 30px;
@@ -44,6 +46,7 @@ main {
 /* top blog */
 .top-blog{
     padding: 30px;
+    margin-top: -18px;
 }
 .blogs{
     display: grid;
@@ -71,3 +74,68 @@ main {
 .link a{
     text-decoration: none;
 }
+/* Courses */
+.section-title{
+  margin-left: 33px;
+  margin-top: 23px;
+}
+#flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.course-thumbanil img{
+  width: 224px;
+  height: 104px;
+}
+.course-title{
+  font-size: 20.03px;
+}
+.course-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-star.filled{
+  color: gold;
+}
+.fa-star{
+  color: gainsboro;
+  font-size: 12px;
+}
+/* .duration */
+.duration{
+  color: #FF4A60;
+}
+/*----------------
+  Media Querries 
+ ------------------*/
+ /* mobile device */
+ @media (max-width:688px) {
+   .container{
+     width: 100%;
+   }
+   .section-title{
+     text-align: center;
+   }
+   .players{
+     grid-template-columns: repeat(1, 1fr); 
+   }
+   .player{
+    justify-content: center;
+    flex-direction: column;
+   }
+   .blog{
+     flex-direction: column;
+   }
+   .blogs{
+     grid-template-columns: 1fr;
+   }
+   #flex{
+     flex-direction: column;
+   }
+   .courses{
+     /* align-items: center; */
+   }
+ }
