@@ -134,6 +134,7 @@ main {
    }
    #flex{
      flex-direction: column;
+     align-items: center;
    }
    .courses{
      /* align-items: center; */
